@@ -1,0 +1,14 @@
+docker images
+docker pull ubuntu
+docker run -it -d ubuntu
+docker ps -a
+docker exec -it 9fc881be76cf bash
+docker stop 9fc881be76cf
+docker commit 9fc881be76cf lakshmikanth9036/ubuntu
+docker push lakshmikanth9036/ubuntu
+docker rm 9fc881be76cf
+docker rmi 5e4881be76cf
+docker image prune -a {to remove all images}
+
+docker container run -it  -> Start new container interactively
+docker container exec -it -> run additional commands in existing container
